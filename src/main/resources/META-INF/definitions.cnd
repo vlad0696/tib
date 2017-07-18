@@ -1,0 +1,15 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+
+[jnt:tib] > jnt:content, mix:title, jmix:structuredContent
+ - jcr:title (string) scoreboost=2.0
+ - body (string, richtext)
+ - image (weakreference, picker[type='image'])
+
+[jnt:tib1] > jnt:content, mix:title, jmix:structuredContent
+ - jcr:title (string) scoreboost=2.0
+ - body (string, richtext)
+ - image (weakreference, picker[type='image'])
+ - table (string, choicelist) queryops 'LIKE'
+
